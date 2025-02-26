@@ -9,3 +9,93 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+body{
+    background-image: url(https://static.vecteezy.com/system/resources/previews/035/723/001/non_2x/city-crossroad-road-on-crosswalk-with-traffic-lights-markings-and-sidewalk-for-pedestrians-without-any-cars-and-people-cityscape-empty-street-highway-concept-illustration-in-flat-style-vector.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.semaforo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+  
+.container {
+  width: auto;
+  height: auto; 
+  background-color: #2C2C2C; 
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 11px 10px rgba(0, 0, 0, 0.5); 
+  padding: 20px;
+  margin-top: 30px;
+  background-color: rgb(243, 158, 0);
+}
+  
+  
+.lights {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.light {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    opacity: 0.4;
+    transition: opacity 0.4s ease-in-out;
+    cursor: pointer;
+}
+  
+  .red {
+    background-color: red;
+  }
+  
+  .yellow {
+    background-color: yellow;
+  }
+  
+  .green {
+    background-color: rgb(6, 206, 6);
+
+  }
+  .red.brillo {
+    box-shadow: 0 0 20px 10px red; 
+  }
+
+  .yellow.brillo {
+    box-shadow: 0 0 20px 10px  yellow;
+ }
+
+  .green.brillo {
+    box-shadow: 0 0 20px 10px rgb(6, 206, 6); 
+  }
+    .brillo {
+    opacity: 1; 
+  }
+  button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+  }
+
+  
