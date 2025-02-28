@@ -3,6 +3,7 @@ import React, { useState } from "react";
 const TrafficLight =()=> {
     const [ color , setColor ] = useState("");
 
+
     const changeColor = () => {
         setColor((prevColor) => {
           if (prevColor === "red") return "yellow";
@@ -11,6 +12,8 @@ const TrafficLight =()=> {
         });
       };
     
+
+      //peaton pulse//
       const handleChangeColor = () => {
         setColor("yellow");
         setTimeout(() => {
@@ -22,7 +25,7 @@ const TrafficLight =()=> {
       };
     
 
-    
+//devuelve el semaforo dentro de root//
     return (
     <div className="semaforo">
          <div className="container">
@@ -47,4 +50,7 @@ const PeatonPulse = ({ toggleColor }) => {
     );
   };
   
+
+
+
   export default TrafficLight;
